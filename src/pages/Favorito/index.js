@@ -16,7 +16,7 @@ function Favorito() {
         
         let filtroFilmes = filmes.filter( 
             (item) => {
-                return(item.id != id)
+                return(item.id !== id)
             } )
             setFilmes(filtroFilmes);
             localStorage.setItem("@primeflix", JSON.stringify(filtroFilmes))
